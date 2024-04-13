@@ -33,9 +33,29 @@ export default {
       backgroundColor: {
         primary : "#f4f5f6",
         brand : "#FFBD5C",
-      }
+      },
+      
+    screens: {
+      'xs' : '480px', 
+      'sm' : '640px',
+      'md' : '768px',
+      'lg' : '1024px',
+      'xl' : '1280px',
+    },
+
+    boxShadow: {
+      "1": "0px 1px 12px 1px rgb(229, 229, 229);"
+    },
+    spacing: {
+      "21" : "21px"
+    }
+
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');}
+  ],
 }
 
