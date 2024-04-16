@@ -24,6 +24,7 @@ export default {
         },
 
         grayText:{
+          50 : "#DBE6F2",
           100 : "#f4f5f6",
           200 : "#94A0AE",
           300 : "#7E8A97",

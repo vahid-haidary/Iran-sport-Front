@@ -24,16 +24,16 @@ export default function SlideElemet({children}) {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="../../public/images/slide.jfif" />
+          <img className='max-h-[570px] w-full'  src="../../public/images/slide.jfif" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='filter grayscale contrast-200' src="../../public/images/slide.jfif" />
+          <img className='max-h-[570px] w-full filter grayscale contrast-200' src="../../public/images/slide.jfif" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='filter invert'  src="../../public/images/slide.jfif" />
+          <img className='max-h-[570px] w-full filter invert'  src="../../public/images/slide.jfif" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='filter sepia' src="../../public/images/slide.jfif" />
+          <img className='max-h-[570px] w-full filter sepia' src="../../public/images/slide.jfif" />
         </SwiperSlide>
       </Swiper>
     </>
