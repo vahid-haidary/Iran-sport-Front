@@ -26,6 +26,7 @@ export default {
         grayText:{
           50 : "#DBE6F2",
           100 : "#f4f5f6",
+          150 : "#ABB7C4",
           200 : "#94A0AE",
           300 : "#7E8A97",
           400 : "#697480",
@@ -45,7 +46,11 @@ export default {
     },
 
     boxShadow: {
-      "1": "0px 1px 12px 1px rgb(229, 229, 229);"
+      "1": "0px 1px 12px 1px rgb(229, 229, 229);",
+      "2" : "0px 4px 5px 0px #0000001A;",
+      "3" : "0px 4px 4px 0px #0000001A;"
+
+
     },
     spacing: {
       "21" : "21px"

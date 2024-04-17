@@ -11,7 +11,7 @@ function Category() {
             </span>
         </div>
 
-        <div className='flex justify-center gap-6 font-DanaDemiBold mt-8 text-blackText-200 child:w-[200px] child:h-[200px] child:flex child:flex-col child:justify-center child:items-center child:gap-6 child:shadow-1 child-hover:scale-105' >
+        <div className='flex justify-center gap-6 font-DanaDemiBold mt-8 text-blackText-200 category-btn-css ' >
 
             <span className='bg-white rounded-full'> 
                 <svg className='w-[45px] h-[45px]' ><use href='#pants' ></use></svg>

@@ -1,4 +1,4 @@
-const Products = [
+const ProductsArray = [
     {
         pId: 1,
         pName: "کتانی مخصوص پیاده روی پوما",
@@ -214,4 +214,4 @@ const Products = [
 
 
 
-export default Products
+export default ProductsArray

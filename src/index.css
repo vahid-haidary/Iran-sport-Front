@@ -34,6 +34,19 @@
         font-display: swap;
     }
 
+
+    @layer components {
+        .products-btn-css {
+            @apply focus:bg-brand focus:text-blackText-200 visited:bg-brand visited:text-blackText-200 rounded-lg py-[5px] px-[10px];
+        }
+        .category-btn-css {
+            @apply  child:w-[200px] child:h-[200px] child:flex child:flex-col child:justify-center child:items-center child:gap-6 child:shadow-3 child-hover:scale-105;
+        }
+        .rotate-svg {
+            @apply transform rotate-180 transition duration-200
+        }
+    }
+
         /* reset browser styles */
     * { box-sizing: border-box;
     }
