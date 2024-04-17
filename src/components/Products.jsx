@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import ProductsArray from '../constants/ProductsArray'
+import { Link } from 'react-router-dom';
 
 function Products() {
 
   const [showAll,setShowAll] = useState(false);
-  console.log(showAll);
   const showProducts = () => {
-    setShowAll(!showAll);
     const arrow = document.getElementById("arrow")
+    setShowAll(!showAll);
    arrow.classList.toggle("rotate-svg")
   }
 
@@ -29,14 +29,16 @@ function Products() {
 
         <div className='grid grid-cols-4 gap-6  mt-12' >
           
-          {ProductsArray.slice(0, showAll ? ProductsArray.length : 8 ).map((product,index)=>{
+          {ProductsArray.slice(0, showAll ? ProductsArray.length : 8 ).map((product)=>{
             return(
-              <div key={index} className='flex flex-col items-center bg-white rounded-lg shadow-2'>
-              <img  className='w-[195px] h-[195px] mt-[13px]' src="../../public/images/shoes/Frame 15(1).png" alt="" />
-              <h3 className='mt-4 font-DanaDemiBold text-blackText-200 text-base' >{product.pName}</h3>
+              <div key={product.pId} className='flex flex-col items-center bg-white rounded-lg shadow-2'>
+                <Link to={`/product/${product.pId}`}>
+              <img  className='w-[195px] h-[195px] mt-[13px]' src={product.pImgs} alt={product.pName} />
+                </Link>
+              <h3 className='max-w-[250px] text-center  mt-4 font-DanaDemiBold text-blackText-200 text-base' >{product.pName}</h3>
               <div className='flex flex-col items-center child:mt-2 ' >
                 <span className='font-DanaDemiBold text-xl text-brand ' >{product.pPrice}</span>
-                <span className='font-Dana text-grayText-150 line-through' >{product.pPrice}</span>
+                <span className='font-Dana text-grayText-150 line-through' >{product.pDiscount}</span>
                 <span className='max-w-[187px] max-h-[33px] whitespace-wrap overflow-hidden text-center leadin-[18px] text-grayText-300 font-Dana text-xs mb-4' >
                   {product.pName}
                 </span>
