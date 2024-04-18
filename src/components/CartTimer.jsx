@@ -3,8 +3,8 @@ import ProductsArray from '../constants/ProductsArray'
 import { Link } from 'react-router-dom'
 
 function CartTimer() {
-    const [second, setSecond] = useState(5);
-    const [minute, setMinute] = useState(0);
+    const [second, setSecond] = useState(59);
+    const [minute, setMinute] = useState(59);
     const [hour,setHour] = useState(24)
   
 
@@ -38,22 +38,22 @@ function CartTimer() {
             </span>
             <div className='flex gap-4 mt-[34px] font-DanaMedium text-xl child:w-[47px] child:h-[47px]'>
                 <div className='text-center'>
-                <span className='flex justify-center h-[47px] w-[47px] mb-2 items-center bg-black text-white rounded-lg' >{second}</span>
+                <span className='timer-style' >{second}</span>
                 <span className='text-sm text-grayText-300' >ثانیه</span>
                 </div>
 
                 <div className='text-center'>
-                <span className='flex justify-center h-[47px] w-[47px] mb-2 items-center bg-black text-white rounded-lg' >{minute}</span>
+                <span className='timer-style' >{minute}</span>
                 <span className='text-sm text-grayText-300' >دقیقه</span>
                 </div>
 
                 <div className='text-center'>
-                <span className='flex justify-center h-[47px] w-[47px] mb-2 items-center bg-black text-white rounded-lg' >{hour}</span>
+                <span className='timer-style' >{hour}</span>
                 <span className='text-sm text-grayText-300' >ساعت</span>
                 </div>
 
                 <div className='text-center'>
-                <span className='flex justify-center h-[47px] w-[47px] mb-2 items-center bg-black text-white rounded-lg' >2</span>
+                <span className='timer-style' >2</span>
                 <span className='text-sm text-grayText-300' >روز</span>
                 </div>
 

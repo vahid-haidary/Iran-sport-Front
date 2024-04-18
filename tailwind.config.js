@@ -35,6 +35,7 @@ export default {
       backgroundColor: {
         primary : "#f4f5f6",
         brand : "#FFBD5C",
+        boxes : "#EEEEEE"
       },
       
     screens: {
@@ -49,6 +50,7 @@ export default {
       "1": "0px 1px 12px 1px rgb(229, 229, 229);",
       "2" : "0px 4px 5px 0px #0000001A;",
       "3" : "0px 4px 4px 0px #0000001A;"
+
 
 
     },

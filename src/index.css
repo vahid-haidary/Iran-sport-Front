@@ -45,6 +45,9 @@
         .rotate-svg {
             @apply transform rotate-180 transition duration-200
         }
+        .timer-style {
+            @apply flex justify-center h-[47px] w-[47px] mb-2 items-center bg-black text-white rounded-lg
+        }
     }
 
         /* reset browser styles */

@@ -3,6 +3,8 @@ import Slider from '../components/Slider'
 import Category from '../components/Category'
 import Products from '../components/Products'
 import CartTimer from '../components/CartTimer'
+import Boxes from '../components/Boxes'
+import Brands from '../components/Brands'
 
 function HomePage() {
   return (
@@ -12,6 +14,8 @@ function HomePage() {
       <Category/>
       <Products/>
       <CartTimer/>
+      <Boxes/>
+      <Brands/>
 
     </div>
 
