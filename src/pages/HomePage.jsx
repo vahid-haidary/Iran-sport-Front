@@ -5,6 +5,7 @@ import Products from '../components/Products'
 import CartTimer from '../components/CartTimer'
 import Boxes from '../components/Boxes'
 import Brands from '../components/Brands'
+import Blogs from '../components/Blogs'
 
 function HomePage() {
   return (
@@ -16,6 +17,7 @@ function HomePage() {
       <CartTimer/>
       <Boxes/>
       <Brands/>
+      <Blogs/>
 
     </div>
 
