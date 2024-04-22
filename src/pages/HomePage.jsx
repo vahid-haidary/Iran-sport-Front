@@ -6,11 +6,12 @@ import CartTimer from '../components/CartTimer'
 import Boxes from '../components/Boxes'
 import Brands from '../components/Brands'
 import Blogs from '../components/Blogs'
+import Representation from '../components/Representation'
 
 function HomePage() {
   return (
     <>
-    <div className='px-[60px] h-[10000px]' >
+    <div className='px-[60px]' >
       <Slider/>
       <Category/>
       <Products/>
@@ -18,6 +19,7 @@ function HomePage() {
       <Boxes/>
       <Brands/>
       <Blogs/>
+      <Representation/>
 
     </div>
 

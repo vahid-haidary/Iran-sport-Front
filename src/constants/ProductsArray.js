@@ -145,14 +145,14 @@ const ProductsArray = [
     },
     {
         pId: 9,
-        pName: "کتانی مخصوص بسکتبال جردن",
+        pName: "کتانی مخصوص والیبال جردن",
         pModel: "SFSW6 KOLIF RTE 6497",
         pPrice: "3980000",
         pDiscount: "4320000" ,
         pStock: "6",
         pStar: "93%",
         pImgs: "../../public/images/shoes/Frame(10).png",
-        pCategory: "بسکتبال",
+        pCategory: "والیبال",
         pDesc :{
             material: "چرم مصنوعی , لاستیک",
             floorMaterial: "فوم فشرده ,لاستیک",

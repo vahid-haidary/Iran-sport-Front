@@ -21,8 +21,8 @@ function App() {
       <Route path="/product/:id" element={<ProductDetailsPage/>}/>
       <Route path="/login" element={<LoginPage/>}/>
     </Routes>
-{/* 
-    <Showing>
+
+    {/* <Showing>
       <Footer/>
     </Showing> */}
 

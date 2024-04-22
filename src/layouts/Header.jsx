@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -44,7 +45,9 @@ function Header() {
         <svg className='w-[26px] h-[27px]' ><use href='#cart' ></use></svg>
         </span>
         <span>
+          <Link to="/login" >
         <svg className='w-[41px] h-[42px]' ><use href='#profile' ></use></svg>
+          </Link>
         </span>
       </div>
 

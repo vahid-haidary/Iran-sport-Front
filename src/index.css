@@ -43,10 +43,13 @@
             @apply  child:w-[200px] child:h-[200px] child:flex child:flex-col child:justify-center child:items-center child:gap-6 child:shadow-3 child-hover:scale-105;
         }
         .rotate-svg {
-            @apply transform rotate-180 transition duration-200
+            @apply  rotate-180 transform;
         }
         .timer-style {
             @apply flex justify-center h-[47px] w-[47px] mb-2 items-center bg-black text-white rounded-lg
+        }
+        .tiktik {
+            @apply focus:opacity-100 visited:opacity-100
         }
     }
 

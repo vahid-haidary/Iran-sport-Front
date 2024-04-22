@@ -53,7 +53,6 @@ export default {
       "4": "0px 2px 8px 0px #414A5314;"
 
 
-
     },
     spacing: {
       "21" : "21px"

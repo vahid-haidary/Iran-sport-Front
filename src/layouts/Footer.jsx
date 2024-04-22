@@ -1,4 +1,5 @@
 import React from 'react'
+import ExpressPost from '../components/ExpressPost'
 
 function Footer() {
   return (
@@ -6,44 +7,7 @@ function Footer() {
     <section className='relative bottom-0 left-0 right-0 h-fit bg-white ' >
 
       {/* TOP */}
-      <div className='flex justify-around items-center h-36 px-[60px] pb-4 font-Dana text-blackText-200 child:text-center ' >
-
-        <div className='flex flex-col items-center space-y-7 '  >
-          <span>
-          <svg className='w-[50px] h-[51px]' ><use href='#medal' ></use></svg>
-          </span>
-          <span>امکان تحویل اکسپرس</span>
-        </div>
-
-        <div className='flex flex-col items-center space-y-7 '  >
-          <span>
-            <svg className='w-[51px] h-[51px]' ><use href='#box' ></use></svg>
-          </span>
-          <span>امکان تحویل اکسپرس</span>
-        </div>
-
-        <div className='flex flex-col items-center space-y-7 '  >
-          <span>
-            <svg className='w-[51px] h-[51px]' ><use href='#card-pos' ></use></svg>
-          </span>
-          <span>امکان پرداخت در محل</span>
-        </div>
-
-        <div className='flex flex-col items-center space-y-7 '  >
-          <span>
-            <svg className='w-[51px] h-[51px]' ><use href='#backward-5' ></use></svg>
-          </span>
-          <span>5 روز ضمانت بازگشت کالا</span>
-        </div>
-
-        <div className='flex flex-col items-center space-y-7 '  >
-          <span>
-            <svg className='w-[50px] h-[51px]' ><use href='#support' ></use></svg>
-          </span>
-          <span>پشتیبانی 24 ساعته</span>
-        </div>
-
-      </div>
+      <ExpressPost/>
 
       {/* CONTENT */}
       <div className='pt-16 px-28 child:text-grayText-400 ' > 
