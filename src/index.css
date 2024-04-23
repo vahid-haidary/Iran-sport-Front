@@ -51,6 +51,27 @@
         .tiktik {
             @apply focus:opacity-100 visited:opacity-100
         }
+        .poem {
+            direction: ltr;
+            overflow-y: scroll;
+            scrollbar-color: orange white ;
+            scrollbar-width: thin;
+            
+          }
+        .active{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 80px;
+            filter: blur(none);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+
+        }
+        .bler {
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+          }
     }
 
         /* reset browser styles */

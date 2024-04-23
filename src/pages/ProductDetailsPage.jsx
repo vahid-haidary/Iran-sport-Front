@@ -7,7 +7,7 @@ import Suggestion from '../components/Suggestion'
 function ProductDetailsPage() {
   return (
     <>
-    <section className='px-[60px] mt-4 h-[10000px]' >
+    <section className='px-[60px] mt-4' >
     
     {/* Top detail */}
     <ProductDetailDesignTop/>

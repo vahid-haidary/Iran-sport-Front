@@ -22,9 +22,9 @@ function App() {
       <Route path="/login" element={<LoginPage/>}/>
     </Routes>
 
-    {/* <Showing>
+    <Showing>
       <Footer/>
-    </Showing> */}
+    </Showing>
 
     </BrowserRouter>
     </>
