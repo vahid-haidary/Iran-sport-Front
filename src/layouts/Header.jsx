@@ -9,9 +9,9 @@ function Header() {
       <div className='flex justify-between text-center items-center w-1/2 mt-4 child:font-Dana child:cursor-pointer child-hover:scale-105' >
 
         {/* Logo & sort navbar */}
-        <span>
+        <Link to={"/"}>
           <img src="../../public/images/Logo Shapes 23.png" alt="Logo" />
-        </span>
+        </Link>
 
           <span className='flex gap-x-2 pl-3' >
           <svg className='w-21 h-21 ' ><use href='#category' ></use></svg>

@@ -1,6 +1,7 @@
 import React from 'react'
 
-function ProductDetailDesignTop() {
+function ProductDetailDesignTop({product}) {
+
   return (
     <>
      <span className='font-Dana text-xs text-grayText-200 ' >دیجی‌کالا / مد و پوشاک / زنانه و مردانه /کفش زنانه و مردانه /کفش ورزشی زنانه و مردانه</span>
@@ -15,10 +16,10 @@ function ProductDetailDesignTop() {
           <img className='w-full h-full' src="../../public/images/shoes/Frame-231.png" alt="" />
       </div>
       <div className='flex'>
-      <img src="../../public/images/shoes/Frame-232 (1).png" alt="" />
-      <img src="../../public/images/shoes/Frame-232 (3).png" alt="" />
-      <img src="../../public/images/shoes/Frame-232 (4).png" alt="" />
-      <img src="../../public/images/shoes/Frame-232 (2).png" alt="" />
+      <img src="../../public/images/shoes/Frame-232 (1).png" alt="shoes(1)" />
+      <img src="../../public/images/shoes/Frame-232 (3).png" alt="shoes(3)" />
+      <img src="../../public/images/shoes/Frame-232 (4).png" alt="shoes(4)" />
+      <img src="../../public/images/shoes/Frame-232 (2).png" alt="shoes(2)" />
       </div>
 
   </div>
@@ -29,7 +30,7 @@ function ProductDetailDesignTop() {
 
   {/* Head cart */}
   <div className='flex justify-between items-center' >
-    <h3 className='text-blackText-200 font-DanaDemiBold font-bold' >کفش پیاده روی مدل AJ11 CMFT LOW CW0784-104</h3>
+    <h3 className='text-blackText-200 font-DanaDemiBold font-bold' >{product.pName}  مدل  {product.pModel}</h3>
     <img src="../../public/images/Logo-puma.png" alt="" />
   </div>
 
@@ -78,27 +79,27 @@ function ProductDetailDesignTop() {
 
           <div>
             <span className='font-Dana text-sm text-grayText-300' >جنس:</span>
-            <p className='font-Dana text-sm text-blackText-100'>چرم مصنوعی،لاستیک ،مش</p>
+            <p className='font-Dana text-sm text-blackText-100'>{product.pDesc.material}</p>
           </div>
 
           <div>
             <span className='font-Dana text-sm text-grayText-300'>جنس زیره:</span>
-            <p className='font-Dana text-sm text-blackText-100'>فوم فشرده،لاستیک</p>
+            <p className='font-Dana text-sm text-blackText-100'>{product.pDesc.floorMaterial}</p>
           </div>
 
           <div>
             <span className='font-Dana text-sm text-grayText-300'>نحوه بسته شدن کفش :</span>
-            <p className='font-Dana text-sm text-blackText-100'>بندی</p>
+            <p className='font-Dana text-sm text-blackText-100'>{product.pDesc.packing}</p>
           </div>
 
           <div>
             <span className='font-Dana text-sm text-grayText-300'>کفی:</span>
-            <p className='font-Dana text-sm text-blackText-100'>بالشتک هوا، قابلیت گردش هوا، طبی، قابل تعویض</p>
+            <p className='font-Dana text-sm text-blackText-100'>{product.pDesc.insole}</p>
           </div>
 
           <div>
             <span className='font-Dana text-sm text-grayText-300'>ارتفاع ساق :</span>
-            <p className='font-Dana text-sm text-blackText-100'>مچ پا</p>
+            <p className='font-Dana text-sm text-blackText-100'>{product.pDesc.leg}</p>
           </div>
 
         </div>
@@ -126,7 +127,7 @@ function ProductDetailDesignTop() {
             <h6 className='font-Dana text-sm text-blackText-100'>ایران اسپرت</h6>
           </span>
           <span className='font-Dana text-xs text-blackText-100'>
-          ٪95 رضایت کالا
+          {product.pStar} رضایت کالا
           </span>
         </div>
         <div className='flex items-center pt-4'>
@@ -156,7 +157,7 @@ function ProductDetailDesignTop() {
             <h6 className='font-Dana text-sm text-blackText-100'>قیمت</h6>
           </span>
           <span>
-            <span className='font-Dana text-sm text-blackText-100'>5,800,000</span>
+            <span className='font-Dana text-sm text-blackText-100'>{product.pPrice}</span>
             <span className='font-DanaDemiBold text-xs text-blackText-100'>تومان</span>
           </span>
         </div>

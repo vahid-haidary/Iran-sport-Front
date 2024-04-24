@@ -1,26 +1,8 @@
 import React, { useState } from 'react';
+import commentsUser from '../constants/commentsUser';
 
 function Comments() {
   const [activeIndex, setActiveIndex] = useState(null);
-
-  // Define comments array with dummy data for example purposes
-  const comments = [
-    {
-      name: 'یگانه احمدی',
-      user: 'کاربر سایت',
-      comment: 'سلام با تشکر از سایت خوب ایران اسپرت خرید این کفش را به همه پیشنهاد می کنم و در یک کلام بگم بخری بردی'
-    },
-    {
-      name: 'محسن عبدالهی',
-      user: 'کاربر سایت',
-      comment: 'این محصول واقعا عالیه، من خیلی راضی هستم'
-    },
-    {
-      name: 'سارا محمدی',
-      user: 'کاربر سایت',
-      comment: 'من این محصول رو تست کردم و خیلی راضی بودم. پیشنهاد می‌کنم'
-    }
-  ];
 
   function handleClick(index) {
     if (activeIndex === index) {
@@ -29,6 +11,8 @@ function Comments() {
       setActiveIndex(index);
     }
   }
+
+
 
   return (
     <>
@@ -44,7 +28,7 @@ function Comments() {
         <div className="flex relative  flex-col gap-2 ltr:[ltr] my-4 overflow-y-auto  max-h-[297px] poem">
 
           {/* Each Comment */}
-          {comments.map((comment, index) => (
+          {commentsUser.map((comment, index) => (
             <div
               key={index}
               className={`flex flex-row-reverse text-end gap-4 bg-white py-[22px] pr-[2px] rounded-lg shadow-4 ${
@@ -68,14 +52,14 @@ function Comments() {
         </div>
 
         {/* Down cart */}
-        <div className='flex items-center gap-6 mt-4'>
+        <form className='flex items-center gap-6 mt-4'>
           <input
             className='w-full h-[50px] font-Dana rounded-full text-sm pr-6 py-2 shadow-4 focus:outline outline-1 outline-brand'
             placeholder='نظر خود را درباره این محصول با ما به اشتراک بگزارید'
             type="text"
           />
-          <button className='w-[200px] h-[42px] font-Dana text-sm bg-brand py-2 rounded-full'>ارسال نظر</button>
-        </div>
+          <button className='w-[200px] h-[42px] font-Dana text-sm bg-brand py-2 rounded-full' type='submit' >ارسال نظر</button>
+        </form>
       </section>
     </>
   );
