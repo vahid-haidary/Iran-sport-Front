@@ -1,25 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 function ProductDetailDesignTop({product}) {
+
+  const [selectedImage, setSelectedImage] = useState("/images/shoes/rework-shoe-base.jpg");
+
+  const handleImageClick = (event) => {
+    setSelectedImage(event.target.src);
+  }
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
 
   return (
     <>
      <span className='font-Dana text-xxs xs:text-xs text-grayText-200 max-xs:px-4 ' >دیجی‌کالا / مد و پوشاک / زنانه و مردانه /کفش زنانه و مردانه /کفش ورزشی زنانه و مردانه</span>
 
-          {/* Cart Detail product */}
+    {/* Cart Detail product */}
 <section className='xs:grid xs:grid-cols-3 gap-4 xs:gap-6 mt-[15px] max-xs:px-4' >
 
 {/* Image Product */}
 <div className='col-span-1 rounded-2xl'>
-  <div>
+  <div className='flex flex-col gap-4' > 
       <div className='max-xs:w-full xs:grid xs:row-span-3 xs:col-span-4'>
-          <img className='w-full h-[264px] xs:h-full' src="../../public/images/shoes/Frame-231.png" alt="" />
+          <img className='w-full h-[264px] rounded-2xl xs:h-[430px] xs:w-[450px]' src={selectedImage} alt="" />
       </div>
-      <div className='max-xs:hidden flex'>
-      <img src="../../public/images/shoes/Frame-232 (1).png" alt="shoes(1)" />
-      <img src="../../public/images/shoes/Frame-232 (3).png" alt="shoes(3)" />
-      <img src="../../public/images/shoes/Frame-232 (4).png" alt="shoes(4)" />
-      <img src="../../public/images/shoes/Frame-232 (2).png" alt="shoes(2)" />
+      <div className='max-xs:hidden flex justify-center gap-2 child:rounded-2xl'>
+      <img className='w-[100px] h-[100px]' src="/images/shoes/rework-shoe-1.jpg" onClick={handleImageClick} alt="shoes(1)" />
+      <img className='w-[100px] h-[100px]' src="/images/shoes/rework-shoe-2.jpg" onClick={handleImageClick} alt="shoes(3)" />
+      <img className='w-[100px] h-[100px]' src="/images/shoes/rework-shoe-3.jpg" onClick={handleImageClick} alt="shoes(4)" />
+      <img className='w-[100px] h-[100px] blur-[2px]' src="/images/shoes/rework-shoe-4.jpg" alt="shoes(2)" />
       </div>
 
   </div>
@@ -31,7 +41,7 @@ function ProductDetailDesignTop({product}) {
   {/* Head cart */}
   <div className='flex justify-between items-center' >
     <h3 className='text-blackText-200 font-DanaDemiBold font-bold max-xs:text-xs' >{product.pName}  مدل  {product.pModel}</h3>
-    <img className='max-xs:hidden' src="../../public/images/Logo-puma.png" alt="" />
+    <img className='max-xs:hidden' src="/images/Logo-puma.png" alt="" />
   </div>
 
   <span className='max-xs:hidden block h-[1px] bg-grayText-50  my-4' ></span>

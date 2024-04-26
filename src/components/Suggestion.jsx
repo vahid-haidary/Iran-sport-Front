@@ -28,7 +28,7 @@ function Suggestion({product}) {
         <div className='flex gap-4 mt-4' >  
             <div className='flex flex-col text-center items-center  w-[156px] xs:w-[210px] bg-white max-xs:pl-2 px-4 py-3 rounded-lg shadow-4   ' >
               
-              <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="../../public/images/shoes/Frame(8).png" alt="" /></span>
+              <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="/images/shoes/Frame(8).png" alt="" /></span>
               <p className='font-DanaMedium text-xxs+ xs:text-sm text-blackText-200' >کتانی مخصوص پیاده روی پوما</p>
 
               <div className='max-xs:flex gap-2 max-xs:w-full max-xs:mt-[5px]'>
@@ -70,7 +70,7 @@ function Suggestion({product}) {
             </div>
             <div className='flex flex-col text-center items-center  w-[156px] xs:w-[210px] bg-white max-xs:pl-2 px-4 py-3 rounded-lg shadow-4   ' >
               
-              <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="../../public/images/shoes/Frame(2).png" alt="" /></span>
+              <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="/images/shoes/Frame(2).png" alt="" /></span>
               <p className='font-DanaMedium text-xxs+ xs:text-sm text-blackText-200' >کتانی مخصوص پیاده روی پوما</p>
 
               <div className='max-xs:flex gap-2 max-xs:w-full max-xs:mt-[5px]'>
@@ -110,7 +110,7 @@ function Suggestion({product}) {
             </div>
             <div className='max-xs:hidden flex flex-col text-center items-center  w-[156px] xs:w-[210px] bg-white max-xs:pl-2 px-4 py-3 rounded-lg shadow-4   ' >
               
-              <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="../../public/images/shoes/Frame(3).png" alt="" /></span>
+              <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="/images/shoes/Frame(3).png" alt="" /></span>
               <p className='font-DanaMedium text-xxs+ xs:text-sm text-blackText-200' >کتانی مخصوص پیاده روی پوما</p>
 
               <div className='max-xs:flex gap-2 max-xs:w-full max-xs:mt-[5px]'>
@@ -149,7 +149,7 @@ function Suggestion({product}) {
             </div>
             <div className='max-xs:hidden flex flex-col text-center items-center  w-[156px] xs:w-[210px] bg-white max-xs:pl-2 px-4 py-3 rounded-lg shadow-4   ' >
               
-              <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="../../public/images/shoes/Frame(4).png" alt="" /></span>
+              <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="/images/shoes/Frame(4).png" alt="" /></span>
               <p className='font-DanaMedium text-xxs+ xs:text-sm text-blackText-200' >کتانی مخصوص پیاده روی پوما</p>
 
               <div className='max-xs:flex gap-2 max-xs:w-full max-xs:mt-[5px]'>
@@ -189,7 +189,7 @@ function Suggestion({product}) {
             </div>
             <div className='max-xs:hidden flex flex-col text-center items-center  w-[156px] xs:w-[210px] bg-white max-xs:pl-2 px-4 py-3 rounded-lg shadow-4   ' >
               
-              <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="../../public/images/shoes/Frame(5).png" alt="" /></span>
+              <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="/images/shoes/Frame(5).png" alt="" /></span>
               <p className='max-xs:hidden font-DanaMedium text-sm text-blackText-200' >کتانی مخصوص پیاده روی پوما</p>
 
               <div className='max-xs:flex gap-2 max-xs:w-full max-xs:mt-[5px]'>

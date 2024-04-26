@@ -9,7 +9,7 @@ function LoginPage() {
 
           <div className='flex flex-col items-center max-xl:mt-11' >
             <span>
-              <img className='w-16 h-11' src="./images/Logo Shapes 23.png" alt="Logo" />
+              <img className='w-16 h-11' src="/images/Logo Shapes 23.png" alt="Logo" />
             </span>
             <span className='font-DanaMedium text-2xl text-grayText-300 my-6 ' >
               خوش آمـدیـد 
@@ -17,7 +17,7 @@ function LoginPage() {
           </div>
 
           <div>
-          <input className='w-[616px] h-[72px] max-lg:w-max p-6 rounded-lg font-Dana text-lg outline outline-2 outline-amber-500/20 focus:outline-amber-500/60'  type="email" placeholder pattern=".+@example\.com" size="30" maxLength={40} required='ایمیل خود را وارد کنید' />
+          <input className='w-[616px] h-[72px] max-lg:w-max p-6 rounded-lg font-Dana text-lg outline outline-2 outline-amber-500/20 focus:outline-amber-500/60'  type="email" placeholder='ایمیل خود را وارد کنید' pattern=".+@example\.com" size="30" maxLength={40}  />
           </div>
 
           <div className='flex justify-center pt-6 font-Dana' >

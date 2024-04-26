@@ -13,9 +13,11 @@ function Products() {
   }
 
   const arrowDownRef = useRef(false)
+  const arrowDownRef2 = useRef(false)
   const showProducts = () => {
     setShowAll(!showAll);
     arrowDownRef.current.style.transform = showAll ? 'rotate(0deg)' : 'rotate(180deg)';
+    arrowDownRef2.current.style.transform = showAll ? 'rotate(0deg)' : 'rotate(180deg)';
   } 
 
   return (
@@ -87,7 +89,7 @@ function Products() {
           <span className='font-DanaDemiBold text-xs xs:text-lg' >{showAll ? '' : 'بیشتر'}</span>
           <span onClick={showProducts}>
             <svg ref={arrowDownRef} id='arrow-down ' className='max-xs:hidden w-[35px] h-[35px] cursor-pointer' ><use href='#arrow-down' ></use></svg>
-            <svg ref={arrowDownRef} id='arrow-down ' className='xs:hidden w-4 h-4 cursor-pointer' ><use href='#arrow-left-res' ></use></svg>
+            <svg ref={arrowDownRef2} id='arrow-down ' className='xs:hidden w-4 h-4 cursor-pointer' ><use href='#arrow-left-res' ></use></svg>
           </span>
         </div>
         

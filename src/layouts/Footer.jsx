@@ -4,6 +4,7 @@ import ExpressPost from '../components/ExpressPost'
 function Footer() {
   return (
     <>
+    {/* Footer Wrapper */}
     <section className='max-xs:hidden relative bottom-0 left-0 right-0 h-fit bg-white ' >
 
       {/* TOP */}
@@ -16,14 +17,16 @@ function Footer() {
       <div className='flex justify-between' >
         {/* Brand & About */}
         <div className=' flex flex-col justify-center max-w-[364px] text-[15px] font-Dana leading-[26px]' >
+
           <span>
-            <img src="../../public/images/Logo Shapes 23.png" alt="" />
+            <img src="/images/Logo Shapes 23.png" alt="" />
             <h6 className='text-grayText-300 text-sm' >ایران اسپرت</h6>
           </span>
           
           <p className='mt-[18px]'>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
             </p>
+
         </div>
 
         {/* Links */}
@@ -98,20 +101,18 @@ function Footer() {
 
             {/* Enamads */}
             <div className='mt-6' >
-              <img  className='w-[200px]' src="../../public/images/footer-namad.png" alt="namad" />
+              <img  className='w-[200px]' src="/images/footer-namad.png" alt="namad" />
             </div>
 
           </div>
         </div>
 
-
-
       </div>
 
-      {/* FOOTER TEXT */}
-      <div className='flex justify-center my-6 font-Dana text-sm  ' >
-        <h6 className='text-grayText-200' >تمامی حقوق سایت متعلق به علی شفیعی است</h6>
-      </div>
+        {/* FOOTER TEXT */}
+        <div className='flex justify-center my-6 font-Dana text-sm  ' >
+          <h6 className='text-grayText-200' >تمامی حقوق سایت متعلق به علی شفیعی است</h6>
+        </div>
 
       </div>
 

@@ -29,37 +29,44 @@ function CartTimer() {
     <>
     <section className=' bg-white font-Dana my-8 xs:my-[72px] xs:rounded-2xl ' >
 
-        <div className='grid grid-cols-2 xs:grid-cols-4 max-xs:max-h-[237px] overflow-hidden gap-4 xs:gap-6 py-8 px-4 xs:p-[19px] ' >
+          {/* Cart Timer Wrapper */}
+      <div className='grid grid-cols-2 xs:grid-cols-4 max-xs:max-h-[237px] overflow-hidden gap-4 xs:gap-6 py-8 px-4 xs:p-[19px] ' >
 
+        {/* Right Section */}
         <div className='flex flex-col justify-start xs:justify-center xs:pr-12' >
+
+            {/* Title Right */}
             <h1  className='font-DanaDemiBold text-sm xs:text-[22px] mb-2'>فروش ویژه</h1>
             <span  className=' max-w-[167px] text-blackText-100 max-xs:text-xs'>
             بهترین های بهار اسپورت کالا با قیمت های بی نظیر
             </span>
+            {/* Timer */}
             <div className='flex gap-2 xs:gap-4 mt-2 xs:mt-[34px] font-DanaMedium text-xs xs:text-xl child:w-[47px] child:h-[47px]'>
-                <div className='text-center'>
+              {/* Second */}
+              <div className='text-center'>
                 <span className='timer-style' >{second}</span>
                 <span className='text-xs xs:text-sm text-grayText-300' >ثانیه</span>
-                </div>
-
-                <div className='text-center'>
+              </div>
+              {/* Minute */}
+              <div className='text-center'>
                 <span className='timer-style' >{minute}</span>
                 <span className='text-xs xs:text-sm text-grayText-300' >دقیقه</span>
-                </div>
-
-                <div className='text-center'>
+              </div>
+              {/* Hour */}
+              <div className='text-center'>
                 <span className='timer-style' >{hour}</span>
                 <span className='text-xs xs:text-sm text-grayText-300' >ساعت</span>
-                </div>
-
-                <div className='text-center'>
+              </div>
+              {/* Day */}
+              <div className='text-center'>
                 <span className='timer-style' >2</span>
                 <span className='text-xs xs:text-sm text-grayText-300' >روز</span>
-                </div>
+              </div>
 
             </div>
         </div>
 
+        {/* Product carts */}
         {ProductsArray.slice(0,3 ).map((product)=>{
             return(
               <div key={product.pId} className='flex flex-col items-center bg-white max-xs:px-2 rounded-lg shadow-2'>
@@ -104,9 +111,9 @@ function CartTimer() {
             </div>
             )
           })}
+         
+      </div>
 
-            
-        </div>
     </section>
     </>
   )
