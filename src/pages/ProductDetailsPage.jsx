@@ -13,17 +13,17 @@ function ProductDetailsPage() {
 
   return (
     <>
-    <section className='px-[60px] mt-4' >
+    <section className='xs:px-[60px] mt-2 xs:mt-4' >
     
     {/* Top detail */}
     <ProductDetailDesignTop product={matchingProduct} />
 
     {/* Exporess post */}
-    <div className='mt-12 mb-[72px]' >
+    <div className='mt-12 mb-[72px] max-xs:hidden' >
     <ExpressPost/>
     </div>
 
-    <Suggestion/>
+    <Suggestion product={matchingProduct}/>
 
     <Comments/>
 

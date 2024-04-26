@@ -57,7 +57,9 @@ function Header() {
     <section className='xs:hidden bg-white' >
       <div className='flex justify-between px-8 py-[15px] shadow-4' >
           <svg className='w-6 h-6' ><use href='#menu' ></use></svg>
+          <Link to={"/"}>
         <img className='w-[37px] h-[25px]' src="../../public/images/Logo Shapes 23.png" alt="Logo" />
+          </Link>
       </div>
     </section>
     
