@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     <>
-    <nav className='flex justify-between bg-white mx-[60px] px-4 pb-5 rounded-lg shadow-1' >
+    <nav className='max-xs:hidden flex justify-between bg-white xs:mx-[60px] px-4 pb-5 rounded-lg shadow-1' >
 
       <div className='flex justify-between text-center items-center w-1/2 mt-4 child:font-Dana child:cursor-pointer child-hover:scale-105' >
 
@@ -52,6 +52,15 @@ function Header() {
       </div>
 
     </nav>
+
+    {/* Response */}
+    <section className='xs:hidden bg-white' >
+      <div className='flex justify-between px-8 py-[15px] shadow-4' >
+          <svg className='w-6 h-6' ><use href='#menu' ></use></svg>
+        <img className='w-[37px] h-[25px]' src="../../public/images/Logo Shapes 23.png" alt="Logo" />
+      </div>
+    </section>
+    
     </>
   )
 }

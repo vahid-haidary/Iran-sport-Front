@@ -4,7 +4,7 @@ import ExpressPost from '../components/ExpressPost'
 function Footer() {
   return (
     <>
-    <section className='relative bottom-0 left-0 right-0 h-fit bg-white ' >
+    <section className='max-xs:hidden relative bottom-0 left-0 right-0 h-fit bg-white ' >
 
       {/* TOP */}
       <ExpressPost/>

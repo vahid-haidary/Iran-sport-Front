@@ -56,6 +56,10 @@ export default {
     },
     spacing: {
       "21" : "21px"
+    },
+    fontSize:{
+      "xxs" : "8px",
+      "xxs+" : "10px"
     }
 
     },

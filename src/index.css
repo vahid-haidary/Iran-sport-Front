@@ -40,13 +40,13 @@
             @apply focus:bg-brand focus:text-blackText-200 visited:bg-brand visited:text-blackText-200 rounded-lg py-[5px] px-[10px];
         }
         .category-btn-css {
-            @apply  child:w-[200px] child:h-[200px] child:flex child:flex-col child:justify-center child:items-center child:gap-6 child:shadow-3 child-hover:scale-105;
+            @apply  xs:child:w-[200px] xs:child:h-[200px] child:w-[70px] child:h-[70px] child:flex child:flex-col child:justify-center child:items-center xs:child:gap-6 child:gap-1 xs:child:shadow-3 child-hover:scale-105;
         }
         .rotate-svg {
             @apply  rotate-180 transform;
         }
         .timer-style {
-            @apply flex justify-center h-[47px] w-[47px] mb-2 items-center bg-black text-white rounded-lg
+            @apply flex justify-center h-8 xs:h-[47px] xs:w-[47px] w-8 mb-2 items-center bg-black text-white rounded-lg
         }
         .tiktik {
             @apply focus:opacity-100 visited:opacity-100

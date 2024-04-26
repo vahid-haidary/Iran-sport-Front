@@ -3,7 +3,7 @@ import React from 'react'
 function Representation() {
   return (
     <>
-    <section className='my-[72px] bg-white shadow-4' >
+    <section className='max-xs:hidden my-[72px] max-xs:px-4 bg-white shadow-4' >
         <div className='flex justify-between px-6 py-4' >
 
         <div className='flex gap-3'>

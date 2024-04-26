@@ -11,7 +11,7 @@ import Representation from '../components/Representation'
 function HomePage() {
   return (
     <>
-    <div className='px-[60px]' >
+    <div className='xs:px-[60px]' >
       <Slider/>
       <Category/>
       <Products/>
