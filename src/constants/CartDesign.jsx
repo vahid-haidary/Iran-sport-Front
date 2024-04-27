@@ -12,7 +12,7 @@ function CartDesign({product}) {
                   <img  className='w-[70px] xs:w-[195px] h-[70px] xs:h-[195px] mt-[13px]' src={product.pImgs} alt={product.pName} />
                 </Link>
                 {/* Product Title */}
-                <h3 className='xs:max-w-[250px] text-center  mt-4 font-DanaDemiBold text-blackText-200 text-xxs+ xs:text-base' >{product.pName}</h3>
+                <h3 className='xs:max-w-[250px] text-center max-h-[24px] xs:max-h-[48px] overflow-hidden  mt-4 font-DanaDemiBold text-blackText-200 text-xxs+ xs:text-base' >{product.pName}</h3>
                 {/* Product Desc */}
                 <div className='flex flex-col items-center child:mt-2 ' >
                   {/* Price */}
@@ -21,7 +21,7 @@ function CartDesign({product}) {
 
                   {/* Name & Category */}
                 <div className=' max-xs:w-full max-xs:flex max-xs:gap-3'>
-                  <span className='max-xs:hidden max-w-[187px] max-h-[33px] whitespace-wrap overflow-hidden text-center leading-[18px] text-grayText-300 font-Dana text-xs ' >
+                  <span className='max-xs:hidden xs:inline-block max-w-[160px] max-h-[33px] whitespace-wrap overflow-hidden text-center leading-[18px] text-grayText-300 font-Dana text-xs ' >
                     {product.pName}
                   </span>
                   {/* Response */}

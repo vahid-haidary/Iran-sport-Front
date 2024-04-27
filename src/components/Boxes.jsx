@@ -14,7 +14,7 @@ function Boxes() {
                 {/* Texts */}
                 <div className='pr-2 pl-[18px] mt-4 xs:p-[30px]' >
                     <h4 className='font-DanaDemiBold text-xs xs:text-2xl mb-2 xs:mb-[15px]' >فروشگاه ایران اسپرت</h4>
-                    <p className='max-w-[130px] xs:max-w-[363px] xs:mb-4 font-Dana text-blackText-100 max-xs:text-xxs'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <p className='max-w-[130px] xs:max-w-[363px] max-h-[30px] xs:max-h-[75px] overflow-hidden xs:mb-4 font-Dana text-blackText-100 max-xs:text-xxs'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                     <span className='max-xs:hidden w-[72px] h-[34px]  inline-flex justify-center items-center gap-2 font-DanaMedium text-xs bg-brand rounded' >
                         <svg className='w-3 h-3' ><use href='#info' ></use></svg>
                         <span>بیشتر</span>
@@ -33,7 +33,7 @@ function Boxes() {
                 {/* Text */}
                 <div className='pr-2 pl-[18px] mt-4 xs:p-[30px]'>
                     <h4 className='font-DanaDemiBold text-xs xs:text-2xl mb-2 xs:mb-[15px]' >فروشگاه ایران اسپرت</h4>
-                    <p className='max-w-[130px] xs:max-w-[363px] xs:mb-4 font-Dana text-blackText-100 max-xs:text-xxs'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <p className='max-w-[130px] xs:max-w-[363px] xs:mb-4 max-h-[30px] xs:max-h-[75px] overflow-hidden font-Dana text-blackText-100 max-xs:text-xxs'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                     <span className='max-xs:hidden w-[72px] h-[34px]  inline-flex justify-center items-center gap-2 font-DanaMedium text-xs bg-brand rounded' >
                         <svg className='w-3 h-3' ><use href='#info' ></use></svg>
                         <span>بیشتر</span>
@@ -52,7 +52,7 @@ function Boxes() {
                 {/* Text */}
                 <div className='pr-2 pl-[18px] mt-4 xs:p-[30px]'>
                     <h4 className='font-DanaDemiBold text-xs xs:text-2xl mb-2 xs:mb-[15px]' >فروشگاه ایران اسپرت</h4>
-                    <p className='max-w-[130px] xs:max-w-[363px] xs:mb-4 font-Dana text-blackText-100 max-xs:text-xxs'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <p className='max-w-[130px] xs:max-w-[363px] xs:mb-4 max-h-[30px] xs:max-h-[75px] overflow-hidden font-Dana text-blackText-100 max-xs:text-xxs'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                     <span className='max-xs:hidden w-[72px] h-[34px]  inline-flex justify-center items-center gap-2 font-DanaMedium text-xs bg-brand rounded' >
                         <svg className='w-3 h-3' ><use href='#info' ></use></svg>
                         <span>بیشتر</span>
@@ -70,7 +70,7 @@ function Boxes() {
                 {/* Text */}
                 <div className='pr-2 pl-[18px] mt-4 xs:p-[30px]'>
                     <h4 className='font-DanaDemiBold text-xs xs:text-2xl mb-2 xs:mb-[15px]' >فروشگاه ایران اسپرت</h4>
-                    <p className='max-w-[130px] xs:max-w-[363px] xs:mb-4 font-Dana text-blackText-100 max-xs:text-xxs'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <p className='max-w-[130px] xs:max-w-[363px] xs:max-h-[75px] max-h-[30px] overflow-hidden xs:mb-4 font-Dana text-blackText-100 max-xs:text-xxs'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
                     <span className='max-xs:hidden w-[72px] h-[34px]  inline-flex justify-center items-center gap-2 font-DanaMedium text-xs bg-brand rounded' >
                         <svg className='w-3 h-3' ><use href='#info' ></use></svg>
                         <span>بیشتر</span>
