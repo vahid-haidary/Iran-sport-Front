@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function LoginPage() {
   return (
@@ -8,9 +9,9 @@ function LoginPage() {
         <div>
 
           <div className='flex flex-col items-center max-xl:mt-11' >
-            <span>
+            <Link to={"/"}>
               <img className='w-16 h-11' src="/images/Logo Shapes 23.png" alt="Logo" />
-            </span>
+            </Link>
             <span className='font-DanaMedium text-2xl text-grayText-300 my-6 ' >
               خوش آمـدیـد 
             </span>

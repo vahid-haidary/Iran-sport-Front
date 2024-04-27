@@ -14,6 +14,7 @@ function ProductDetailDesignTop({product}) {
 
   return (
     <>
+    {/* Product Navigation */}
      <span className='font-Dana text-xxs xs:text-xs text-grayText-200 max-xs:px-4 ' >دیجی‌کالا / مد و پوشاک / زنانه و مردانه /کفش زنانه و مردانه /کفش ورزشی زنانه و مردانه</span>
 
     {/* Cart Detail product */}
@@ -21,10 +22,13 @@ function ProductDetailDesignTop({product}) {
 
 {/* Image Product */}
 <div className='col-span-1 rounded-2xl'>
+  {/* Image Dynamic Wrapper */}
   <div className='flex flex-col gap-4' > 
+      {/* Base Pic */}
       <div className='max-xs:w-full xs:grid xs:row-span-3 xs:col-span-4'>
-          <img className='w-full h-[264px] rounded-2xl xs:h-[430px] xs:w-[450px]' src={selectedImage} alt="" />
+          <img className='w-full h-[264px] rounded-2xl xs:h-[430px] xs:w-[450px]' src={selectedImage} alt="BasePic" />
       </div>
+      {/* More Pic */}
       <div className='max-xs:hidden flex justify-center gap-2 child:rounded-2xl'>
       <img className='w-[100px] h-[100px]' src="/images/shoes/rework-shoe-1.jpg" onClick={handleImageClick} alt="shoes(1)" />
       <img className='w-[100px] h-[100px]' src="/images/shoes/rework-shoe-2.jpg" onClick={handleImageClick} alt="shoes(3)" />
@@ -36,6 +40,7 @@ function ProductDetailDesignTop({product}) {
   
 </div>
 
+{/* Product Detail Cart Wrapper */}
 <div className='xs: col-span-2 xs:bg-white p-4 xs:p-6 mb-6 rounded-2xl' >
 
   {/* Head cart */}
@@ -44,15 +49,17 @@ function ProductDetailDesignTop({product}) {
     <img className='max-xs:hidden' src="/images/Logo-puma.png" alt="" />
   </div>
 
+    {/* Line Bottom */}
   <span className='max-xs:hidden block h-[1px] bg-grayText-50  my-4' ></span>
 
-  {/* Main cart */}
+  {/* Main cart Wrapper */}
   <div className='flex justify-between' >
 
     {/* Right */}
     <div className='max-xs:flex max-xs:flex-col'>
 
       <div className='max-xs:flex max-xs:gap-4 max-xs:items-center max-xs:order-2'>
+
         {/* Color */}
       <div>
         <h5 className='text-blackText-200 text-xs xs:text-sm font-DanaDemiBold font-bold mb-2 xs:mb-4' >رنگ ها :</h5>
@@ -80,11 +87,12 @@ function ProductDetailDesignTop({product}) {
         </div>
 
       </div>
+
       </div>
 
       {/* Detail */}
       <div className='mt-6 max-xs:order-1 max-xs:mb-8' >
-
+        {/* Product Property */}
         <h5 className='text-blackText-200 text-xs xs:text-sm font-DanaDemiBold font-bold'>ویژگی ها:</h5>
 
         <div className='flex flex-col gap-2 child:flex mt-2 max-xs:leadng-[18px] '>
@@ -117,7 +125,7 @@ function ProductDetailDesignTop({product}) {
         </div>
       </div>
 
-      {/* More */}
+      {/* More Svg */}
       <div className='max-xs:hidden flex items-center gap-2 mt-6 mb-[14px]'>
         <svg className='w-3 h-3' ><use href='#more-2'></use></svg>
         <span className='font-DanaMedium text-xs text-[#5669D7]' >مشاهده بیشتر</span>
@@ -131,8 +139,10 @@ function ProductDetailDesignTop({product}) {
     <div className='max-xs:hidden grid w-[312px] shadow-4 mt-[3px] px-[30px] rounded-lg' >
       <h5 className='text-blackText-200 text-sm font-DanaDemiBold font-bold mb-[29px] mt-4'>فروشنده</h5>
 
-      <div className='flex flex-col gap-4 divide-y-[1px] divide-solid divide-grayText-50' >
         {/* List */}
+      <div className='flex flex-col gap-4 divide-y-[1px] divide-solid divide-grayText-50' >
+
+        {/* Satisfaction Product  */}
         <div className='flex items-center justify-between  '>
           <span className='flex gap-2'>
             <svg className='h-5 w-5' ><use href='#shop'></use></svg>
@@ -142,6 +152,8 @@ function ProductDetailDesignTop({product}) {
           {product.pStar} رضایت کالا
           </span>
         </div>
+
+        {/* Warranty Product */}
         <div className='flex items-center pt-4'>
           <span className='flex gap-2'>
             <svg className='h-5 w-5' ><use href='#sheild-tick'></use></svg>
@@ -149,6 +161,7 @@ function ProductDetailDesignTop({product}) {
           </span>
         </div>
 
+        {/* Stock Product */}
         <div className='flex items-center pt-4'>
           <span className='flex gap-2'>
             <svg className='h-5 w-5' ><use href='#shop'></use></svg>
@@ -156,6 +169,7 @@ function ProductDetailDesignTop({product}) {
           </span>
         </div>
 
+        {/* Score Product */}
         <div className='flex items-center pt-4'>
           <span className='flex gap-2'>
             <svg className='h-5 w-5' ><use href='#coin'></use></svg>
@@ -163,6 +177,7 @@ function ProductDetailDesignTop({product}) {
           </span>
         </div>
 
+        {/* Price Product */}
         <div className='flex items-center pt-4 justify-between'>
           <span className='flex gap-2'>
             <svg className='h-5 w-5' ><use href='#info-2'></use></svg>
@@ -173,14 +188,14 @@ function ProductDetailDesignTop({product}) {
             <span className='font-DanaDemiBold text-xs text-blackText-100'>تومان</span>
           </span>
         </div>
-
+      
       </div>
+
+      {/* Add to cart Btn */}
       <div className='w-[137px] h-[42px] flex items-center justify-center justify-self-center gap-2 font-Dana text-sm bg-brand mb-[25px] mt-[53px] rounded-lg' >
         <svg className='w-4 h-4' ><use href='#shopping-cart'></use></svg>
         <span>افزودن به سبد</span>
       </div>
-
-
 
     </div>
 
@@ -190,8 +205,7 @@ function ProductDetailDesignTop({product}) {
 
 </section>
 
-    </>
-  )
-}
+</>
+  )}
 
 export default ProductDetailDesignTop
