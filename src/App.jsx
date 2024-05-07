@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage"
 import LoginPage from "./pages/LoginPage"
 import ProductDetailsPage from "./pages/ProductDetailsPage"
 import Showing from "./components/ShowingLayout"
+import SignUpPage from "./pages/SignUpPage"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Route path="/" element={<HomePage/>}/>
       <Route path="/product/:id" element={<ProductDetailsPage/>}/>
       <Route path="/login" element={<LoginPage/>}/>
+      <Route path="/sign-up" element={<SignUpPage/>}/>
     </Routes>
 
     <Showing>

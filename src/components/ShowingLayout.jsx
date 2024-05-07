@@ -10,7 +10,7 @@ function Showing({children}) {
 
     useEffect(()=>{
 
-        if(location.pathname === "/login"){
+        if(location.pathname === "/login" || location.pathname === "/sign-up"){
             setShow(false)
         }else{
             setShow(true)
