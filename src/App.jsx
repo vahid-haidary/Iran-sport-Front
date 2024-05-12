@@ -6,6 +6,7 @@ import LoginPage from "./pages/LoginPage"
 import ProductDetailsPage from "./pages/ProductDetailsPage"
 import Showing from "./components/ShowingLayout"
 import SignUpPage from "./pages/SignUpPage"
+import BasketCart from "./pages/BasketCart"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Route path="/product/:id" element={<ProductDetailsPage/>}/>
       <Route path="/login" element={<LoginPage/>}/>
       <Route path="/sign-up" element={<SignUpPage/>}/>
+      <Route path="/basket" element={<BasketCart/>}/>
     </Routes>
 
     <Showing>

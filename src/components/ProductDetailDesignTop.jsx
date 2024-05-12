@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom';
 
 function ProductDetailDesignTop({product}) {
+  const {id} = useParams();
+  console.log(id);
 
   const [selectedImage, setSelectedImage] = useState("/images/shoes/rework-shoe-base.jpg");
 
@@ -11,6 +14,21 @@ function ProductDetailDesignTop({product}) {
   useEffect(()=>{
     window.scrollTo(0, 0);
   },[])
+
+  function clickCart(){
+    const productDetails = {
+      pId : product.pId,
+      pName : product.pName,
+      pModel : product.pModel,
+      pPrice : product.pPrice,
+      pImgs : product.pImgs
+    }
+    localStorage.setItem("productDetails", JSON.stringify(productDetails));
+    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    cartItems.push(productDetails);
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }
+
 
   return (
     <>
@@ -192,9 +210,9 @@ function ProductDetailDesignTop({product}) {
       </div>
 
       {/* Add to cart Btn */}
-      <div className='w-[137px] h-[42px] flex items-center justify-center justify-self-center gap-2 font-Dana text-sm bg-brand mb-[25px] mt-[53px] rounded-lg' >
+      <div onClick={clickCart} className='w-[137px] h-[42px] flex items-center justify-center justify-self-center gap-2 font-Dana text-sm bg-brand mb-[25px] mt-[53px] rounded-lg cursor-pointer' >
         <svg className='w-4 h-4' ><use href='#shopping-cart'></use></svg>
-        <span>افزودن به سبد</span>
+          <span>افزودن به سبد</span>
       </div>
 
     </div>

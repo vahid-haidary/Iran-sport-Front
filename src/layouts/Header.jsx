@@ -50,9 +50,11 @@ function Header() {
         <svg className='w-[26px] h-[26px]' ><use href='#search' ></use></svg>
         </span>
         {/* Basket */}
-        <span>
-        <svg className='w-[26px] h-[27px]' ><use href='#cart' ></use></svg>
-        </span>
+        <Link to={"/basket"}>
+          <span>
+          <svg className='w-[26px] h-[27px]' ><use href='#cart' ></use></svg>
+          </span>
+        </Link>
         {/* Profile */}
         <span>
           <Link to="/login" >
