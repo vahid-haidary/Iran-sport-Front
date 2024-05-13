@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+export const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
 function ProductDetailDesignTop({product}) {
-  const {id} = useParams();
-  console.log(id);
+
 
   const [selectedImage, setSelectedImage] = useState("/images/shoes/rework-shoe-base.jpg");
 
@@ -24,9 +23,9 @@ function ProductDetailDesignTop({product}) {
       pImgs : product.pImgs
     }
     localStorage.setItem("productDetails", JSON.stringify(productDetails));
-    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
     cartItems.push(productDetails);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
+    window.location.reload()
   }
 
 

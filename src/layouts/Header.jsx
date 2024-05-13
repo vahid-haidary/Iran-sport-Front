@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { cartItems } from '../components/ProductDetailDesignTop'
 
 function Header() {
   return (
     <>
     <nav className='max-xs:hidden flex justify-between bg-white xs:mx-[60px] px-4 pb-5 rounded-lg shadow-1' >
-
 
       {/* Sort Wrapper */}
       <div className='flex justify-between text-center items-center w-1/2 mt-4 child:font-Dana child:cursor-pointer child-hover:scale-105' >
@@ -43,7 +43,7 @@ function Header() {
       </div>
 
       {/* Login & Search Wrapper */}
-      <div className='flex items-center gap-x-2 mt-[15px] child:cursor-pointer child-hover:scale-105' >
+      <div className='flex items-center gap-x-2 mt-[15px] child:cursor-pointer ' >
 
         {/* Search */}
         <span>
@@ -54,6 +54,8 @@ function Header() {
           <span>
           <svg className='w-[26px] h-[27px]' ><use href='#cart' ></use></svg>
           </span>
+          {cartItems.length !== 0 ? <div className='absolute left-[130px] bg-red-600 p-1 rounded-full font-DanaDemiBold text-xs'>{cartItems.length}</div> : null}
+
         </Link>
         {/* Profile */}
         <span>
