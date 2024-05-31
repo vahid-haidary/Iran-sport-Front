@@ -34,7 +34,7 @@ function CartTimer() {
       <div className='grid grid-cols-2 xs:grid-cols-4 max-xs:max-h-[237px] overflow-hidden gap-4 xs:gap-6 py-8 px-4 xs:p-[19px] ' >
 
         {/* Right Section */}
-        <div className='flex flex-col justify-start xs:justify-center xs:pr-12' >
+        <div className='flex flex-col justify-start xs:justify-center xs:pr-12 xs:max-xl:pr-0' >
 
             {/* Title Right */}
             <h1  className='font-DanaDemiBold text-sm xs:text-[22px] mb-2'>فروش ویژه</h1>
@@ -42,7 +42,7 @@ function CartTimer() {
             بهترین های بهار اسپورت کالا با قیمت های بی نظیر
             </span>
             {/* Timer */}
-            <div className='flex gap-2 xs:gap-4 mt-2 xs:mt-[34px] font-DanaMedium text-xs xs:text-xl child:w-[47px] child:h-[47px]'>
+            <div className='flex max-xs:gap-2 max-xl:gap-3 xl:gap-4  mt-2 xs:mt-[34px] font-DanaMedium text-xs xs:text-xl child:w-[47px] child:h-[47px]'>
               {/* Second */}
               <div className='text-center'>
                 <span className='timer-style' >{second}</span>

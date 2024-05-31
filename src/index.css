@@ -40,7 +40,7 @@
             @apply focus:bg-brand focus:text-blackText-200 visited:bg-brand visited:text-blackText-200 rounded-lg py-[5px] px-[10px];
         }
         .category-btn-css {
-            @apply  xs:child:w-[200px] xs:child:h-[200px] child:w-[70px] child:h-[70px] child:flex child:flex-col child:justify-center child:items-center xs:child:gap-6 child:gap-1 xs:child:shadow-3 child-hover:scale-105;
+            @apply  xl:child:w-[200px] xl:child:h-[200px] child:h-[140px] child:w-[200px]  max-xs:child:w-[70px] max-xs:child:h-[70px] child:flex child:flex-col child:justify-center child:items-center xs:child:gap-6 child:gap-1 xs:child:shadow-3 child-hover:scale-105;
         }
         .rotate-svg {
             @apply  rotate-180 transform;
@@ -51,6 +51,10 @@
         .tiktik {
             @apply focus:opacity-100 visited:opacity-100
         }
+        .before-line-category {
+            @apply before:w-[450px] before:h-[0.8px] xl:before:w-[880px] xl:before:h-[0.8px] max-xs:before:w-[110px] max-xs:before:h-[0.8px]  before:bg-grayText-50 ;
+        }
+
         .poem {
             direction: ltr;
             overflow-y: scroll;

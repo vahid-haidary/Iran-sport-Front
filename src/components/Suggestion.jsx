@@ -28,7 +28,7 @@ function Suggestion({product}) {
         </div>
 
         {/* Carts Wrapper */}
-        <div className='flex gap-4 mt-4' >  
+        <div className='flex xs:max-xl:overflow-auto gap-4 mt-4' >  
             <div className='flex flex-col text-center items-center  w-[156px] xs:w-[210px] bg-white max-xs:pl-2 px-4 py-3 rounded-lg shadow-4   ' >
               {/* Product Cover & Title */}
               <span className='mb-4' ><img className='w-[70px] xs:w-[100px] h-[70px] xs:h-[100px]' src="/images/shoes/Frame(8).png" alt="shoe8" /></span>

@@ -11,12 +11,12 @@ function Footer() {
       <ExpressPost/>
 
       {/* CONTENT */}
-      <div className='pt-16 px-28 child:text-grayText-400 ' > 
+      <div className='pt-16 px-28 xs:max-xl:px-20 child:text-grayText-400 ' > 
 
       {/* footer Container */}
       <div className='flex justify-between' >
         {/* Brand & About */}
-        <div className=' flex flex-col justify-center max-w-[364px] text-[15px] font-Dana leading-[26px]' >
+        <div className=' flex flex-col justify-center xs:max-xl:max-w-[300px] max-w-[364px] text-[15px] font-Dana leading-[26px]' >
 
           <span>
             <img src="/images/Logo Shapes 23.png" alt="" />
@@ -30,7 +30,7 @@ function Footer() {
         </div>
 
         {/* Links */}
-        <div className='w-[235px] text-sm font-Dana' >
+        <div className='w-[235px] text-sm font-Dana xs:max-xl:hidden' >
 
           {/* Title */}
           <h5 className='mb-[18px] text-lg font-DanaDemiBold ' >پیوند های مهم</h5>

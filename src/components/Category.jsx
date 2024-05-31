@@ -13,7 +13,7 @@ function Category() {
         </div>
 
         {/* Category Wrapper */}
-        <div className='flex justify-center xs:gap-6 gap-4 font-DanaDemiBold mt-6 xs:mt-8 text-blackText-200 xs:text-lg text-xxs+ category-btn-css ' >
+        <div className='flex justify-center xs:gap-6 gap-4 font-DanaDemiBold mt-6 xs:mt-8 text-blackText-200 text-base xl:text-lg max-xs:text-xxs+ category-btn-css ' >
 
             {/* circle-1*/}
             <span className='bg-white rounded-full'> 

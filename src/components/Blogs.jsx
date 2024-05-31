@@ -22,7 +22,7 @@ function Blogs() {
                 <img className='w-full max-xs:rounded-lg ' src="/images/Blogs/blog-img1 2.png" alt="" />
                 <div className='xs:pr-7 p-2  mt-2 xs:mt-[19.5px] ' >
                 <h4 className='font-DanaDemiBold max-h-[12px] xs:max-h-[28px] overflow-hidden text-xxs+ xs:text-xl text-blackText-200 mb-2 xs:mb-4' >بررسی کفش Nike مدل رانر</h4>
-                <p className='max-w-[333px] max-h-[50px] xs:max-h-16 overflow-hidden xs:h-[78px] mb-4 font-Dana text-xxs xs:text-sm text-blackText-100 leading-4  xs:leading-[26px] ' >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
+                <p className='max-w-[333px] max-h-[50px] xs:max-h-16 overflow-hidden xs:h-[78px] mb-4 font-Dana max-xs:text-xxs text-xs xl:text-sm text-blackText-100 leading-4  xs:leading-[26px] ' >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
 
                 <div className='flex justify-between max-xs:pt-4 xs:pl-6 xs:mb-4' >
                     <div className='flex items-center gap-1 xs:gap-2 font-Dana text-xs text-gray-300' >
@@ -48,7 +48,7 @@ function Blogs() {
                 <img className='w-full max-xs:rounded-lg ' src="/images/Blogs/blog-img1 2(1).png" alt="" />
                 <div className='xs:pr-7 p-2 mt-2 xs:mt-[19.5px] '>
                 <h4 className='font-DanaDemiBold max-h-[12px] xs:max-h-[28px] overflow-hidden text-xxs+ xs:text-xl text-blackText-200 mb-2 xs:mb-4' >ویژگی های یک تیشرت ورزشی </h4>
-                <p className='max-w-[333px] max-h-[50px] xs:max-h-16 overflow-hidden xs:h-[78px] mb-4 font-Dana text-xxs xs:text-sm text-blackText-100 leading-4  xs:leading-[26px] ' >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
+                <p className='max-w-[333px] max-h-[50px] xs:max-h-16 overflow-hidden xs:h-[78px] mb-4 font-Dana max-xs:text-xxs text-xs xl:text-sm text-blackText-100 leading-4  xs:leading-[26px] ' >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
 
                 <div className='flex justify-between max-xs:pt-4 xs:pl-6 xs:mb-4' >
                     <div className='flex items-center gap-1 xs:gap-2 font-Dana text-xs text-gray-300' >
@@ -74,7 +74,7 @@ function Blogs() {
                 <img className='w-full max-xs:rounded-lg ' src="/images/Blogs/blog-img1 2(2).png" alt="" />
                 <div className='xs:pr-7 p-2 mt-2 xs:mt-[19.5px] '>
                 <h4 className='font-DanaDemiBold max-h-[12px] xs:max-h-[28px] overflow-hidden text-xxs+ xs:text-xl text-blackText-200 mb-2 xs:mb-4' >بهترین کتانی های ورزشی سال</h4>
-                <p className='max-w-[333px] max-h-[50px] xs:max-h-16 overflow-hidden xs:h-[78px] mb-4 font-Dana text-xxs xs:text-sm text-blackText-100 leading-4 xs:leading-[26px] ' >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
+                <p className='max-w-[333px] max-h-[50px] xs:max-h-16 overflow-hidden xs:h-[78px] mb-4 font-Dana max-xs:text-xxs text-xs xl:text-sm text-blackText-100 leading-4 xs:leading-[26px] ' >لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
 
                 <div className='flex justify-between max-xs:pt-4 xs:pl-6 xs:mb-4' >
                     <div className='flex items-center gap-1 xs:gap-2 font-Dana text-xs text-gray-300' >

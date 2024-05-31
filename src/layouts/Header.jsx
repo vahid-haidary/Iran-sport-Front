@@ -5,10 +5,10 @@ import { cartItems } from '../components/ProductDetailDesignTop'
 function Header() {
   return (
     <>
-    <nav className='max-xs:hidden flex justify-between bg-white xs:mx-[60px] px-4 pb-5 rounded-lg shadow-1' >
+    <nav className='max-xs:hidden flex justify-between bg-white lg:mx-8 xl:mx-[60px] px-4 pb-5 rounded-lg shadow-1' >
 
       {/* Sort Wrapper */}
-      <div className='flex justify-between text-center items-center w-1/2 mt-4 child:font-Dana child:cursor-pointer child-hover:scale-105' >
+      <div className='flex justify-between text-center items-center max-xl:gap-x-6 max-xl:w-auto w-1/2 mt-4 child:font-Dana child:cursor-pointer child-hover:scale-105' >
 
         {/* Logo & sort navbar */}
         <Link to={"/"}>
@@ -54,7 +54,7 @@ function Header() {
           <span>
           <svg className='w-[26px] h-[27px]' ><use href='#cart' ></use></svg>
           </span>
-          {cartItems.length !== 0 ? <div className='absolute left-[130px] bg-red-600 p-1 rounded-full font-DanaDemiBold text-xs'>{cartItems.length}</div> : null}
+          {cartItems.length !== 0 ? <div className='absolute xs:max-xl:left-[105px] xl:left-[130px] bg-red-600 p-1 rounded-full font-DanaDemiBold text-xs'>{cartItems.length}</div> : null}
 
         </Link>
         {/* Profile */}

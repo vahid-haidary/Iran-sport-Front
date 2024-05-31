@@ -9,7 +9,7 @@ function CartDesign({product}) {
 
                 {/* Product Cover Image */}
                 <Link to={`/product/${product.pId}`}>
-                  <img  className='w-[70px] xs:w-[195px] h-[70px] xs:h-[195px] mt-[13px]' src={product.pImgs} alt={product.pName} />
+                  <img  className='max-xs:w-[70px] w-[175px] xl:w-[195px] max-xs:h-[70px] h-[175px] xl:h-[195px] mt-[13px]' src={product.pImgs} alt={product.pName} />
                 </Link>
                 {/* Product Title */}
                 <h3 className='xs:max-w-[250px] text-center max-h-[24px] xs:max-h-[48px] overflow-hidden  mt-4 font-DanaDemiBold text-blackText-200 text-xxs+ xs:text-base' >{product.pName}</h3>

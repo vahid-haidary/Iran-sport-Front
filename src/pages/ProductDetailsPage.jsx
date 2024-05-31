@@ -13,7 +13,7 @@ function ProductDetailsPage() {
 
   return (
     <>
-    <section className='xs:px-[60px] mt-2 xs:mt-4' >
+    <section className='xl:px-[60px] lg:px-8 mt-2 xs:mt-4' >
     
     {/* Top detail */}
     <ProductDetailDesignTop product={matchingProduct} />

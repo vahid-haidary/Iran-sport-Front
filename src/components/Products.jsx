@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import ProductsArray from '../constants/ProductsArray'
 import CartDesign from '../constants/CartDesign';
 
@@ -12,12 +12,9 @@ function Products() {
     setFilteredProducts(filtered);
   }
 
-  const arrowDownRef = useRef(false)
-  const arrowDownRef2 = useRef(false)
+
   const showProducts = () => {
     setShowAll(!showAll);
-    arrowDownRef.current.style.transform = showAll ? 'rotate(0deg)' : 'rotate(180deg)';
-    arrowDownRef2.current.style.transform = showAll ? 'rotate(0deg)' : 'rotate(180deg)';
   } 
 
   return (
@@ -29,10 +26,10 @@ function Products() {
 
           {/* Filter Title */}
           <span>
-            <h4 className='font-DanaDemiBold xs:text-xl text-xs text-blackText-200' >کفش های ایران اسپرت</h4>
+            <h4 className='font-DanaDemiBold text-lg xl:text-xl max-xs:text-xs text-blackText-200' >کفش های ایران اسپرت</h4>
           </span>
           {/* Filter Btns Wrapper */}
-          <div className='flex justify-around items-center font-DanaMedium text-grayText-200 text-xxs+ xs:text-sm xs:before:w-[760px] before:w-[106px] before:h-[0.8px]  before:bg-grayText-50 ' >
+          <div className='flex justify-around items-center font-DanaMedium text-grayText-200 text-xxs+ xs:text-sm before-line-category ' >
             <button className='products-btn-css' onClick={() => setFilteredProducts(ProductsArray)}>همه</button>
             <button className='products-btn-css' onClick={() => filterByCategory('پیاده روی')}>کوه نوردی</button>
             <button className='products-btn-css max-xs:hidden ' onClick={() => filterByCategory('دوومیدانی')}>دومیدانی</button>
@@ -58,9 +55,9 @@ function Products() {
           <span className='font-DanaDemiBold text-xs xs:text-lg' >{showAll ? '' : 'بیشتر'}</span>
           <span onClick={showProducts}>
             {/* Desktop Svg */}
-            <svg ref={arrowDownRef} id='arrow-down ' className='max-xs:hidden w-[35px] h-[35px] cursor-pointer' ><use href='#arrow-down' ></use></svg>
+            <svg  id='arrow-down ' className={`max-xs:hidden w-[35px] h-[35px] cursor-pointer ${showAll ? 'rotate-180' : '' }`} ><use href='#arrow-down' ></use></svg>
             {/* Mobile Svg */}
-            <svg ref={arrowDownRef2} id='arrow-down ' className='xs:hidden w-4 h-4 cursor-pointer' ><use href='#arrow-left-res' ></use></svg>
+            <svg  id='arrow-down ' className={`xs:hidden w-4 h-4 cursor-pointer ${showAll ? 'rotate-180' : ''}`} ><use href='#arrow-left-res' ></use></svg>
           </span>
         </div>
         

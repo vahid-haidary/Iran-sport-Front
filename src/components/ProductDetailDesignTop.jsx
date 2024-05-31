@@ -22,10 +22,9 @@ function ProductDetailDesignTop({product}) {
       pPrice : product.pPrice,
       pImgs : product.pImgs
     }
-    localStorage.setItem("productDetails", JSON.stringify(productDetails));
     cartItems.push(productDetails);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
-    window.location.reload()
+    localStorage.setItem("productDetails", JSON.stringify(productDetails));
   }
 
 
@@ -47,10 +46,10 @@ function ProductDetailDesignTop({product}) {
       </div>
       {/* More Pic */}
       <div className='max-xs:hidden flex justify-center gap-2 child:rounded-2xl'>
-      <img className='w-[100px] h-[100px]' src="/images/shoes/rework-shoe-1.jpg" onClick={handleImageClick} alt="shoes(1)" />
-      <img className='w-[100px] h-[100px]' src="/images/shoes/rework-shoe-2.jpg" onClick={handleImageClick} alt="shoes(3)" />
-      <img className='w-[100px] h-[100px]' src="/images/shoes/rework-shoe-3.jpg" onClick={handleImageClick} alt="shoes(4)" />
-      <img className='w-[100px] h-[100px] blur-[2px]' src="/images/shoes/rework-shoe-4.jpg" alt="shoes(2)" />
+      <img className='xs:max-xl:w-[70px] xl:w-[100px] h-[100px]' src="/images/shoes/rework-shoe-1.jpg" onClick={handleImageClick} alt="shoes(1)" />
+      <img className='xs:max-xl:w-[70px] xl:w-[100px] h-[100px]' src="/images/shoes/rework-shoe-2.jpg" onClick={handleImageClick} alt="shoes(3)" />
+      <img className='xs:max-xl:w-[70px] xl:w-[100px] h-[100px]' src="/images/shoes/rework-shoe-3.jpg" onClick={handleImageClick} alt="shoes(4)" />
+      <img className='xs:max-xl:w-[70px] xl:w-[100px] h-[100px] blur-[2px]' src="/images/shoes/rework-shoe-4.jpg" alt="shoes(2)" />
       </div>
 
   </div>
