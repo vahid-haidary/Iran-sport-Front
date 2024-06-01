@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { removefromcart } from '../redux/cartActions'
 
 function BasketCart() {
 
     const [count, setCount] = useState({})
     const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem("cartItems")) || [])
+    const dispatch = useDispatch()
 
     function minusCount(item){
         const newCount = {...count}
@@ -23,11 +26,13 @@ function BasketCart() {
     }
     
     function deleteHandler(event){
+        dispatch({type: "Remove_Item_From_Cart"})
         const itemName = event.target.parentNode.parentNode.querySelector("h5").innerText;
+        console.log(itemName);
         const newCartItems = cartItems.filter(item => item.pModel !== itemName);
         setCartItems(newCartItems);
         localStorage.setItem("cartItems", JSON.stringify(newCartItems));
-        window.location.reload()
+        // window.location.reload()
     }
     
     
@@ -56,7 +61,7 @@ function BasketCart() {
                     <div className='flex max-xs:flex-col max-xs:mt-8 items-center gap-4 xs:gap-8'>
                         
                         <h5 className='font-Dana'>{getTotalPrice(item)} <span className='font-DanaDemiBold'>تومان</span></h5>
-                        <img className='w-6 h-6 cursor-pointer hover:scale-105' onClick={deleteHandler} src="../../public/images/delete.png" alt="Delete-Btn" />
+                        <img className='w-6 h-6 cursor-pointer hover:scale-105' onClick={(event) => deleteHandler(event, item)} src="../../public/images/delete.png" alt="Delete-Btn" />
 
                         <div className='flex items-center bg-slate-300 rounded-lg gap-2 font-DanaMedium'>
                             <button className='bg-grayText-200 p-2 rounded-md m-1 ' onClick={() => minusCount(item)}>-</button>

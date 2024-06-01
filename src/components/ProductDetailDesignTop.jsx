@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 export const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+import { useDispatch } from 'react-redux';
+import { addtocart } from '../redux/cartActions';
 
 function ProductDetailDesignTop({product}) {
 
-
+  const dispatch = useDispatch()
   const [selectedImage, setSelectedImage] = useState("/images/shoes/rework-shoe-base.jpg");
 
   const handleImageClick = (event) => {
@@ -15,6 +17,7 @@ function ProductDetailDesignTop({product}) {
   },[])
 
   function clickCart(){
+    dispatch(addtocart())
     const productDetails = {
       pId : product.pId,
       pName : product.pName,

@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { cartItems } from '../components/ProductDetailDesignTop'
+import { useSelector } from 'react-redux'
 
 function Header() {
+  const cart = useSelector(state => state.cart)
+
+  useEffect(() => {
+    localStorage.setItem('cartLength', cart.cart.length);
+  }, [cart.cart.length]);
+  
+
   return (
     <>
     <nav className='max-xs:hidden flex justify-between bg-white lg:mx-8 xl:mx-[60px] px-4 pb-5 rounded-lg shadow-1' >
@@ -54,7 +61,7 @@ function Header() {
           <span>
           <svg className='w-[26px] h-[27px]' ><use href='#cart' ></use></svg>
           </span>
-          {cartItems.length !== 0 ? <div className='absolute xs:max-xl:left-[105px] xl:left-[130px] bg-red-600 p-1 rounded-full font-DanaDemiBold text-xs'>{cartItems.length}</div> : null}
+          {cart.cart.length !== 0 ? <div className='absolute xs:max-xl:left-[105px] xl:left-[130px] bg-red-600 p-1 rounded-full font-DanaDemiBold text-xs'>{cart.cart.length }</div> : null}
 
         </Link>
         {/* Profile */}
