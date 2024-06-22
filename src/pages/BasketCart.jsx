@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { removefromcart } from '../redux/cartActions'
 
 function BasketCart() {
 
